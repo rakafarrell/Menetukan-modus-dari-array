@@ -1,0 +1,21 @@
+int a[]={7,7,7,9,9,9,8,8,8,6,6,6,5,5,5};
+        int c=a[0];
+        int b=0;
+        int hasil=0,besar=0;
+        for (int i=0; i<a.length ;i++){
+          if(a[i]==c){
+          System.out.print(a[i]+" ");
+          System.out.println(++b);
+          if(b>besar){
+                    besar=b;
+                    hasil=c;
+                    }
+            }else{
+                c=a[i];
+                b=1;
+                System.out.print(a[i]+" ");
+                System.out.println(b);
+            }
+        }
+        System.out.println("Modus = "+hasil);
+    }
